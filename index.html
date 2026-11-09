@@ -38,11 +38,12 @@ h2.section-title{font-size:clamp(30px,4vw,44px);line-height:1.15;margin:9px 0 12
 .section-head p{color:var(--muted);margin:0}
 .services{background:var(--soft)}
 .cards{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-.service{background:white;padding:25px 21px;border-bottom:4px solid var(--red);box-shadow:0 8px 25px #0000000a;min-height:190px}
-.service .ico{width:48px;height:48px;background:#fff0f0;color:var(--red);display:grid;place-items:center;font-size:25px;margin-bottom:18px}
+.service{background:white;padding:0;border-bottom:4px solid var(--red);box-shadow:0 8px 25px #0000000a;overflow:hidden;display:flex;flex-direction:column}
+.service img{width:100%;height:150px;object-fit:cover;display:block;transition:transform .4s}.service:hover img{transform:scale(1.06)}.service .imgbox{overflow:hidden;background:#222}.service .body{padding:22px 21px 25px}
+.service .ico{width:44px;height:44px;background:#fff0f0;color:var(--red);display:grid;place-items:center;font-size:23px;margin:-44px 0 14px;position:relative;border-top:3px solid var(--red)}
 .service h3{font-size:18px;margin:0 0 8px}.service p{font-size:13px;color:var(--muted);margin:0}
 .about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:48px;align-items:center}
-.red-panel{background:var(--red);color:white;padding:38px;position:relative;min-height:300px;display:flex;flex-direction:column;justify-content:center;overflow:hidden}
+.red-panel{background:linear-gradient(135deg,#c71920e6,#a90f16d9),url(images/electricite.jpg) center/cover;color:white;padding:38px;position:relative;min-height:300px;display:flex;flex-direction:column;justify-content:center;overflow:hidden}
 .red-panel:after{content:"";position:absolute;width:100px;height:180%;background:#fff;opacity:.12;transform:rotate(28deg);right:35px;top:-30px}
 .red-panel strong{font-size:clamp(28px,4vw,42px);line-height:1.1;position:relative;z-index:1}
 .red-panel span{margin-top:14px;position:relative;z-index:1}
@@ -56,7 +57,7 @@ footer{background:#050505;color:#aaa;padding:22px 0;font-size:12px}.foot{display
 .whatsapp{position:fixed;right:20px;bottom:20px;z-index:20;background:#20b85a;color:white;border-radius:50px;padding:13px 18px;font-weight:900;box-shadow:0 5px 20px #0004}
 [dir=rtl] body{text-align:right}[dir=rtl] .brand small{letter-spacing:0}[dir=rtl] .service{border-bottom:0;border-top:4px solid var(--red)}[dir=rtl] .checks span:before{margin-right:0;margin-left:8px}[dir=rtl] .hero-tags span{border-left:0;border-right:3px solid var(--red)}
 @media(max-width:850px){nav{gap:12px}.hero-grid{grid-template-columns:1fr;padding:58px 0}.hero-card{max-width:520px}.cards{grid-template-columns:repeat(2,1fr)}.about-grid{grid-template-columns:1fr}.contact-grid{grid-template-columns:1fr}}
-@media(max-width:600px){.nav{padding:12px 0;flex-wrap:wrap}.nav nav{order:3;width:100%;justify-content:space-between;font-size:12px}.brand{font-size:14px}.hero-grid{gap:30px}h1{letter-spacing:-1px}.hero p{font-size:16px}.cards{grid-template-columns:1fr 1fr;gap:10px}.service{padding:18px 14px;min-height:175px}.service h3{font-size:15px}.checks{grid-template-columns:1fr}.hero-card{padding:20px}.hero:before{right:-20%}section{padding:58px 0}.whatsapp{right:12px;bottom:12px;padding:11px 14px}}
+@media(max-width:600px){.nav{padding:12px 0;flex-wrap:wrap}.nav nav{order:3;width:100%;justify-content:space-between;font-size:12px}.brand{font-size:14px}.hero-grid{gap:30px}h1{letter-spacing:-1px}.hero p{font-size:16px}.cards{grid-template-columns:1fr 1fr;gap:10px}.service .body{padding:16px 14px 20px}.service img{height:110px}.service h3{font-size:15px}.checks{grid-template-columns:1fr}.hero-card{padding:20px}.hero:before{right:-20%}section{padding:58px 0}.whatsapp{right:12px;bottom:12px;padding:11px 14px}}
 </style>
 </head>
 <body>
@@ -87,10 +88,10 @@ footer{background:#050505;color:#aaa;padding:22px 0;font-size:12px}.foot{display
  <div class="wrap">
   <div class="section-head"><div class="eyebrow" data-fr="Nos prestations" data-ar="خدماتنا">Nos prestations</div><h2 class="section-title" data-fr="Des services adaptés à vos besoins" data-ar="خدمات تلبي احتياجاتكم">Des services adaptés à vos besoins</h2><p data-fr="Découvrez les principaux domaines d’intervention de TRAVAUX DIVERS." data-ar="اكتشفوا أبرز الخدمات التي نقدمها في مجال الأشغال والخدمات التقنية.">Découvrez les principaux domaines d’intervention de TRAVAUX DIVERS.</p></div>
   <div class="cards">
-   <article class="service"><div class="ico">ϟ</div><h3 data-fr="Électricité" data-ar="الكهرباء">Électricité</h3><p data-fr="Travaux et installations électriques." data-ar="أعمال وتركيبات كهربائية.">Travaux et installations électriques.</p></article>
-   <article class="service"><div class="ico">⌁</div><h3 data-fr="Configuration RJ45 & RG12" data-ar="إعداد شبكات RJ45 و RG12">Configuration RJ45 & RG12</h3><p data-fr="Configuration et raccordement de réseaux." data-ar="إعداد وتوصيل الشبكات.">Configuration et raccordement de réseaux.</p></article>
-   <article class="service"><div class="ico">◉</div><h3 data-fr="Caméras de surveillance" data-ar="تركيب كاميرات المراقبة">Caméras de surveillance</h3><p data-fr="Installation de systèmes de vidéosurveillance." data-ar="تركيب أنظمة كاميرات المراقبة.">Installation de systèmes de vidéosurveillance.</p></article>
-   <article class="service"><div class="ico">◒</div><h3 data-fr="Installation parabole" data-ar="تركيب الهوائيات">Installation parabole</h3><p data-fr="Installation et réglage de paraboles." data-ar="تركيب وضبط أطباق استقبال الأقمار الصناعية.">Installation et réglage de paraboles.</p></article>
+   <article class="service"><div class="imgbox"><img src="images/electricite.jpg" alt="Électricien travaillant sur un tableau électrique" data-alt-fr="Électricien travaillant sur un tableau électrique" data-alt-ar="عامل كهرباء يشتغل على لوحة كهربائية" loading="lazy" width="547" height="365"></div><div class="body"><div class="ico">ϟ</div><h3 data-fr="Électricité" data-ar="الكهرباء">Électricité</h3><p data-fr="Travaux et installations électriques." data-ar="أعمال وتركيبات كهربائية.">Travaux et installations électriques.</p></div></article>
+   <article class="service"><div class="imgbox"><img src="images/reseau.png" alt="Câbles réseau RJ45 branchés sur un switch" data-alt-fr="Câbles réseau RJ45 branchés sur un switch" data-alt-ar="أسلاك شبكة RJ45 متصلة بجهاز سويتش" loading="lazy" width="547" height="365"></div><div class="body"><div class="ico">⌁</div><h3 data-fr="Configuration RJ45 & RG12" data-ar="إعداد شبكات RJ45 و RG12">Configuration RJ45 & RG12</h3><p data-fr="Configuration et raccordement de réseaux." data-ar="إعداد وتوصيل الشبكات.">Configuration et raccordement de réseaux.</p></div></article>
+   <article class="service"><div class="imgbox"><img src="images/cameras.png" alt="Technicien installant une caméra de surveillance" data-alt-fr="Technicien installant une caméra de surveillance" data-alt-ar="تقني يركب كاميرا مراقبة" loading="lazy" width="547" height="365"></div><div class="body"><div class="ico">◉</div><h3 data-fr="Caméras de surveillance" data-ar="تركيب كاميرات المراقبة">Caméras de surveillance</h3><p data-fr="Installation de systèmes de vidéosurveillance." data-ar="تركيب أنظمة كاميرات المراقبة.">Installation de systèmes de vidéosurveillance.</p></div></article>
+   <article class="service"><div class="imgbox"><img src="images/parabole.jpg" alt="Technicien installant une parabole" data-alt-fr="Technicien installant une parabole" data-alt-ar="تقني يركب هوائيا (طبق استقبال)" loading="lazy" width="547" height="365"></div><div class="body"><div class="ico">◒</div><h3 data-fr="Installation parabole" data-ar="تركيب الهوائيات">Installation parabole</h3><p data-fr="Installation et réglage de paraboles." data-ar="تركيب وضبط أطباق استقبال الأقمار الصناعية.">Installation et réglage de paraboles.</p></div></article>
   </div>
  </div>
 </section>
@@ -119,6 +120,7 @@ function setLang(lang){
  document.documentElement.lang=lang;
  document.documentElement.dir=lang==='ar'?'rtl':'ltr';
  document.querySelectorAll('[data-fr][data-ar]').forEach(el=>{el.textContent=el.dataset[lang]});
+ document.querySelectorAll('[data-alt-fr]').forEach(el=>{el.alt=el.dataset['alt'+lang.charAt(0).toUpperCase()+lang.slice(1)]});
  document.getElementById('frBtn').classList.toggle('active',lang==='fr');
  document.getElementById('arBtn').classList.toggle('active',lang==='ar');
 }
