@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="TRAVAUX DIVERS – Abdssamad Sarhan. Électricité, réseau RJ45 & RG12, caméras de surveillance, paraboles et travaux divers.">
+<title>TRAVAUX DIVERS | Abdssamad Sarhan</title>
+<style>
+:root{--red:#c71920;--red2:#a90f16;--black:#090909;--ink:#202020;--muted:#666;--paper:#fff;--soft:#f5f5f5}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6}
+a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+header{background:var(--black);color:white;position:sticky;top:0;z-index:10;box-shadow:0 4px 18px #0002}
+.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:900;letter-spacing:.5px}
+.mark{width:42px;height:42px;background:var(--red);transform:skew(-22deg);position:relative}
+.mark:after{content:"";position:absolute;left:12px;top:0;width:9px;height:100%;background:#fff;opacity:.95}
+.brand small{display:block;color:#ccc;font-size:10px;letter-spacing:2px;font-weight:600}
+nav{display:flex;align-items:center;gap:22px;font-size:14px}nav a:hover{color:#ff5b60}
+.lang{display:flex;gap:5px}.lang button{border:1px solid #777;background:transparent;color:white;border-radius:20px;padding:7px 12px;cursor:pointer;font-weight:700}.lang button.active{background:var(--red);border-color:var(--red)}
+.hero{background:var(--black);color:white;overflow:hidden;position:relative}
+.hero:before{content:"";position:absolute;width:300px;height:500px;background:var(--red);transform:skew(-28deg);right:9%;top:-180px;opacity:.95}
+.hero:after{content:"";position:absolute;width:80px;height:260px;background:#fff;transform:skew(-28deg);right:31%;bottom:-160px;opacity:.08}
+.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:42px;padding:78px 0 86px}
+.kicker{color:#ff6268;font-size:13px;font-weight:800;letter-spacing:3px;text-transform:uppercase}
+h1{font-size:clamp(42px,6vw,76px);line-height:1.02;margin:16px 0 20px;letter-spacing:-2px}
+h1 span{color:#ff333b}.hero p{max-width:580px;color:#ddd;font-size:18px}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13px 20px;border-radius:4px;font-weight:800;border:2px solid var(--red);background:var(--red);color:white;transition:.2s}
+.btn:hover{background:var(--red2);transform:translateY(-2px)}.btn.outline{background:transparent;border-color:#fff}.btn.outline:hover{background:#fff;color:#111}
+.hero-card{background:#171717;border:1px solid #3b3b3b;padding:26px;box-shadow:18px 18px 0 var(--red);transform:rotate(1deg)}
+.hero-card .symbol{font-size:64px;color:#ff4249;line-height:1}
+.hero-card h2{font-size:25px;margin:12px 0 4px}.hero-card p{font-size:14px;margin:0;color:#ccc}
+.hero-tags{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:22px}
+.hero-tags span{background:#262626;padding:10px;font-size:12px;border-left:3px solid var(--red)}
+section{padding:76px 0}.section-head{text-align:center;max-width:680px;margin:0 auto 38px}
+.eyebrow{color:var(--red);font-weight:900;letter-spacing:2px;font-size:12px;text-transform:uppercase}
+h2.section-title{font-size:clamp(30px,4vw,44px);line-height:1.15;margin:9px 0 12px;color:#111}
+.section-head p{color:var(--muted);margin:0}
+.services{background:var(--soft)}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.service{background:white;padding:25px 21px;border-bottom:4px solid var(--red);box-shadow:0 8px 25px #0000000a;min-height:190px}
+.service .ico{width:48px;height:48px;background:#fff0f0;color:var(--red);display:grid;place-items:center;font-size:25px;margin-bottom:18px}
+.service h3{font-size:18px;margin:0 0 8px}.service p{font-size:13px;color:var(--muted);margin:0}
+.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:48px;align-items:center}
+.red-panel{background:var(--red);color:white;padding:38px;position:relative;min-height:300px;display:flex;flex-direction:column;justify-content:center;overflow:hidden}
+.red-panel:after{content:"";position:absolute;width:100px;height:180%;background:#fff;opacity:.12;transform:rotate(28deg);right:35px;top:-30px}
+.red-panel strong{font-size:clamp(28px,4vw,42px);line-height:1.1;position:relative;z-index:1}
+.red-panel span{margin-top:14px;position:relative;z-index:1}
+.about-copy h2{font-size:36px;line-height:1.15;margin:8px 0 16px}.about-copy p{color:var(--muted)}
+.checks{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:20px}.checks span:before{content:"✓";color:var(--red);font-weight:900;margin-right:8px}
+.contact{background:#111;color:white;position:relative;overflow:hidden}.contact:before{content:"";position:absolute;width:300px;height:500px;background:var(--red);transform:skew(-28deg);right:-150px;top:-130px;opacity:.8}
+.contact .wrap{position:relative;z-index:1}.contact .section-head h2{color:white}.contact .section-head p{color:#ccc}
+.contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.contact-item{background:#202020;border:1px solid #393939;padding:22px}.contact-item .ico{font-size:25px;color:#ff4b52}.contact-item small{display:block;color:#aaa;margin:6px 0}.contact-item strong{font-size:16px;overflow-wrap:anywhere}
+footer{background:#050505;color:#aaa;padding:22px 0;font-size:12px}.foot{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.whatsapp{position:fixed;right:20px;bottom:20px;z-index:20;background:#20b85a;color:white;border-radius:50px;padding:13px 18px;font-weight:900;box-shadow:0 5px 20px #0004}
+[dir=rtl] body{text-align:right}[dir=rtl] .brand small{letter-spacing:0}[dir=rtl] .service{border-bottom:0;border-top:4px solid var(--red)}[dir=rtl] .checks span:before{margin-right:0;margin-left:8px}[dir=rtl] .hero-tags span{border-left:0;border-right:3px solid var(--red)}
+@media(max-width:850px){nav{gap:12px}.hero-grid{grid-template-columns:1fr;padding:58px 0}.hero-card{max-width:520px}.cards{grid-template-columns:repeat(2,1fr)}.about-grid{grid-template-columns:1fr}.contact-grid{grid-template-columns:1fr}}
+@media(max-width:600px){.nav{padding:12px 0;flex-wrap:wrap}.nav nav{order:3;width:100%;justify-content:space-between;font-size:12px}.brand{font-size:14px}.hero-grid{gap:30px}h1{letter-spacing:-1px}.hero p{font-size:16px}.cards{grid-template-columns:1fr 1fr;gap:10px}.service{padding:18px 14px;min-height:175px}.service h3{font-size:15px}.checks{grid-template-columns:1fr}.hero-card{padding:20px}.hero:before{right:-20%}section{padding:58px 0}.whatsapp{right:12px;bottom:12px;padding:11px 14px}}
+</style>
+</head>
+<body>
+<header>
+ <div class="wrap nav">
+  <a class="brand" href="#home"><span class="mark"></span><span>TRAVAUX DIVERS<small>ABDSSAMAD SARHAN</small></span></a>
+  <nav><a href="#home" data-fr="Accueil" data-ar="الرئيسية">Accueil</a><a href="#services" data-fr="Services" data-ar="الخدمات">Services</a><a href="#about" data-fr="À propos" data-ar="من نحن">À propos</a><a href="#contact" data-fr="Contact" data-ar="اتصل بنا">Contact</a></nav>
+  <div class="lang"><button class="active" id="frBtn" onclick="setLang('fr')">FR</button><button id="arBtn" onclick="setLang('ar')">عربي</button></div>
+ </div>
+</header>
+<main>
+<section class="hero" id="home">
+ <div class="wrap hero-grid">
+  <div>
+   <div class="kicker" data-fr="Électricité • Réseaux • Sécurité" data-ar="الكهرباء • الشبكات • أنظمة الحماية">Électricité • Réseaux • Sécurité</div>
+   <h1><span data-fr="TRAVAUX" data-ar="أشغال">TRAVAUX</span><br><span data-fr="DIVERS" data-ar="متنوعة">DIVERS</span></h1>
+   <p data-fr="Abdssamad Sarhan vous accompagne pour vos travaux d’électricité, d’installation réseau et de sécurité. Un seul contact pour plusieurs services." data-ar="عبد الصمد سرحان رهن إشارتكم لإنجاز أعمال الكهرباء وتركيب الشبكات وأنظمة المراقبة. تواصلوا معنا للاستفادة من خدمات متعددة.">Abdssamad Sarhan vous accompagne pour vos travaux d’électricité, d’installation réseau et de sécurité. Un seul contact pour plusieurs services.</p>
+   <div class="actions"><a class="btn" href="https://wa.me/212664514451" target="_blank" rel="noopener" data-fr="✆  Contacter sur WhatsApp" data-ar="✆  تواصل عبر واتساب">✆ Contacter sur WhatsApp</a><a class="btn outline" href="tel:+212664514451" data-fr="Appeler maintenant" data-ar="اتصل الآن">Appeler maintenant</a></div>
+  </div>
+  <div class="hero-card">
+   <div class="symbol">ϟ</div><h2 data-fr="Votre installation entre de bonnes mains." data-ar="تركيباتكم في أيدٍ أمينة.">Votre installation entre de bonnes mains.</h2>
+   <p data-fr="Électricité · Réseau · Vidéosurveillance · Parabole" data-ar="الكهرباء · الشبكات · كاميرات المراقبة · تركيب الهوائيات">Électricité · Réseau · Vidéosurveillance · Parabole</p>
+   <div class="hero-tags"><span data-fr="Installation électrique" data-ar="التركيبات الكهربائية">Installation électrique</span><span data-fr="Réseaux RJ45 & RG12" data-ar="شبكات RJ45 و RG12">Réseaux RJ45 & RG12</span><span data-fr="Caméras de surveillance" data-ar="كاميرات المراقبة">Caméras de surveillance</span><span data-fr="Installation parabole" data-ar="تركيب الهوائيات">Installation parabole</span></div>
+  </div>
+ </div>
+</section>
+<section class="services" id="services">
+ <div class="wrap">
+  <div class="section-head"><div class="eyebrow" data-fr="Nos prestations" data-ar="خدماتنا">Nos prestations</div><h2 class="section-title" data-fr="Des services adaptés à vos besoins" data-ar="خدمات تلبي احتياجاتكم">Des services adaptés à vos besoins</h2><p data-fr="Découvrez les principaux domaines d’intervention de TRAVAUX DIVERS." data-ar="اكتشفوا أبرز الخدمات التي نقدمها في مجال الأشغال والخدمات التقنية.">Découvrez les principaux domaines d’intervention de TRAVAUX DIVERS.</p></div>
+  <div class="cards">
+   <article class="service"><div class="ico">ϟ</div><h3 data-fr="Électricité" data-ar="الكهرباء">Électricité</h3><p data-fr="Travaux et installations électriques." data-ar="أعمال وتركيبات كهربائية.">Travaux et installations électriques.</p></article>
+   <article class="service"><div class="ico">⌁</div><h3 data-fr="Configuration RJ45 & RG12" data-ar="إعداد شبكات RJ45 و RG12">Configuration RJ45 & RG12</h3><p data-fr="Configuration et raccordement de réseaux." data-ar="إعداد وتوصيل الشبكات.">Configuration et raccordement de réseaux.</p></article>
+   <article class="service"><div class="ico">◉</div><h3 data-fr="Caméras de surveillance" data-ar="تركيب كاميرات المراقبة">Caméras de surveillance</h3><p data-fr="Installation de systèmes de vidéosurveillance." data-ar="تركيب أنظمة كاميرات المراقبة.">Installation de systèmes de vidéosurveillance.</p></article>
+   <article class="service"><div class="ico">◒</div><h3 data-fr="Installation parabole" data-ar="تركيب الهوائيات">Installation parabole</h3><p data-fr="Installation et réglage de paraboles." data-ar="تركيب وضبط أطباق استقبال الأقمار الصناعية.">Installation et réglage de paraboles.</p></article>
+  </div>
+ </div>
+</section>
+<section id="about">
+ <div class="wrap about-grid">
+  <div class="red-panel"><strong data-fr="TRAVAUX DIVERS" data-ar="أشغال متنوعة">TRAVAUX DIVERS</strong><span data-fr="Un contact pour vos travaux et installations." data-ar="جهة واحدة لمختلف أعمالكم وتركيباتكم.">Un contact pour vos travaux et installations.</span></div>
+  <div class="about-copy"><div class="eyebrow" data-fr="À votre service" data-ar="في خدمتكم">À votre service</div><h2 data-fr="Abdssamad Sarhan" data-ar="عبد الصمد سرحان">Abdssamad Sarhan</h2><p data-fr="Pour vos besoins en électricité, réseaux, vidéosurveillance et installation de parabole, contactez Abdssamad Sarhan. Présentez votre besoin par téléphone ou WhatsApp pour échanger sur votre projet." data-ar="من أجل احتياجاتكم في الكهرباء والشبكات وكاميرات المراقبة وتركيب الهوائيات، تواصلوا مع عبد الصمد سرحان. اشرحوا طلبكم عبر الهاتف أو واتساب لمناقشة مشروعكم.">Pour vos besoins en électricité, réseaux, vidéosurveillance et installation de parabole, contactez Abdssamad Sarhan. Présentez votre besoin par téléphone ou WhatsApp pour échanger sur votre projet.</p><div class="checks"><span data-fr="Plusieurs services" data-ar="خدمات متعددة">Plusieurs services</span><span data-fr="Contact direct" data-ar="تواصل مباشر">Contact direct</span><span data-fr="Devis sur demande" data-ar="السعر عند الطلب">Devis sur demande</span><span data-fr="FR / العربية" data-ar="الفرنسية / العربية">FR / العربية</span></div></div>
+ </div>
+</section>
+<section class="contact" id="contact">
+ <div class="wrap">
+  <div class="section-head"><div class="eyebrow" data-fr="Parlons de votre projet" data-ar="لنتحدث عن مشروعكم">Parlons de votre projet</div><h2 class="section-title" data-fr="Contactez Abdssamad" data-ar="تواصلوا مع عبد الصمد">Contactez Abdssamad</h2><p data-fr="Appelez ou écrivez pour toute demande d’information ou de devis." data-ar="اتصلوا أو أرسلوا رسالة لأي استفسار أو طلب عرض سعر.">Appelez ou écrivez pour toute demande d’information ou de devis.</p></div>
+  <div class="contact-grid">
+   <div class="contact-item"><div class="ico">☎</div><small data-fr="Téléphone 1" data-ar="الهاتف الأول">Téléphone 1</small><strong><a href="tel:+212664514451">0664514451</a></strong></div>
+   <div class="contact-item"><div class="ico">☎</div><small data-fr="Téléphone 2" data-ar="الهاتف الثاني">Téléphone 2</small><strong><a href="tel:+212653491961">0653491961</a></strong></div>
+   <div class="contact-item"><div class="ico">✉</div><small data-fr="E-mail" data-ar="البريد الإلكتروني">E-mail</small><strong><a href="mailto:abdssamadsarhan@gmail.com">abdssamadsarhan@gmail.com</a></strong></div>
+  </div>
+  <div class="actions" style="justify-content:center;margin-top:26px"><a class="btn" href="https://wa.me/212664514451" target="_blank" rel="noopener" data-fr="Écrire sur WhatsApp" data-ar="راسلنا عبر واتساب">Écrire sur WhatsApp</a></div>
+ </div>
+</section>
+</main>
+<footer><div class="wrap foot"><span>© <span id="year"></span> TRAVAUX DIVERS – Abdssamad Sarhan</span><span data-fr="Électricité • Réseaux • Sécurité • Travaux divers" data-ar="الكهرباء • الشبكات • الحماية • أشغال متنوعة">Électricité • Réseaux • Sécurité • Travaux divers</span></div></footer>
+<a class="whatsapp" href="https://wa.me/212664514451" target="_blank" rel="noopener">WhatsApp</a>
+<script>
+function setLang(lang){
+ document.documentElement.lang=lang;
+ document.documentElement.dir=lang==='ar'?'rtl':'ltr';
+ document.querySelectorAll('[data-fr][data-ar]').forEach(el=>{el.textContent=el.dataset[lang]});
+ document.getElementById('frBtn').classList.toggle('active',lang==='fr');
+ document.getElementById('arBtn').classList.toggle('active',lang==='ar');
+}
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
